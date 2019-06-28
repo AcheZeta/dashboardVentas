@@ -59,32 +59,33 @@
 </template>
 
 <script>
-  export default {
-    data: () => ({
-      valid: true,
-      dashboardName: '',
-      newPurchase: '',    
-      increasePurchase: '',   
-      newUsers: '',
-      newVisit: '',
-      date: '',  
-      numberRules: [
-        v => !!NaN || 'Este campo es requerido',
-      ],
-      textRules: [
-        v => !!v || 'Este campo es requerido',
-        // v => (v && v.length <= 50) || 'El nombre es demasiado largo'
-      ],                
-    }),
+export default {
+  data: () => ({
+    valid: true,
+    dashboardName: '',
+    newPurchase: '',
+    increasePurchase: '',
+    newUsers: '',
+    newVisit: '',
+    date: '',
+    numberRules: [
+      v => !!NaN || 'Este campo es requerido',
+      v => (v && v.length <= 50) || 'El nombre es demasiado largo'
+    ],
+    textRules: [
+      v => !!v || 'Este campo es requerido'
+      // v => (v && v.length <= 50) || 'El nombre es demasiado largo'
+    ]
+  }),
 
-    methods: {
-      validate () {
-        if (this.$refs.form.validate()) {
-          this.snackbar = true
-        }
+  methods: {
+    validate () {
+      if (this.$refs.form.validate()) {
+        this.snackbar = true
       }
     }
   }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
