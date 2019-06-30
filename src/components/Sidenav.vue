@@ -37,7 +37,8 @@ export default {
     return {
       items: [
         { title: 'Usuario', icon: 'person' },
-        { title: 'Formulario', icon: 'question_answer' }
+        { title: 'Formulario', icon: 'list' },
+        { title: 'Dashboard', icon: 'dashboard' }
       ],
       right: null
     }
@@ -45,6 +46,9 @@ export default {
   methods: {
     prueba () {
       console.log('Hola')
+    },
+    dashRoute () {
+      this.$router.push('/dashboard')
     }
   }
 }

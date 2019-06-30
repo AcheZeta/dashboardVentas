@@ -72,22 +72,22 @@
 <script>
 export default {
   data () {
-  return {    
-    valid: true,
-    dashboardName: '',
-    newPurchase: null,
-    increasePurchase: null,
-    newUsers: null,
-    newVisit: null,
-    date: null,
-    numberRules: [
-      v => !!v || 'Este campo es requerido'
-    ],
-    textRules: [
-      v => !!v || 'Este campo es requerido'
-      // v => (v && v.length <= 50) || 'El nombre es demasiado largo'
-    ]
-  } 
+    return {
+      valid: true,
+      dashboardName: '',
+      newPurchase: null,
+      increasePurchase: null,
+      newUsers: null,
+      newVisit: null,
+      date: null,
+      numberRules: [
+        v => !!v || 'Este campo es requerido'
+      ],
+      textRules: [
+        v => !!v || 'Este campo es requerido'
+        // v => (v && v.length <= 50) || 'El nombre es demasiado largo'
+      ]
+    }
   },
   methods: {
     validate () {
@@ -96,8 +96,8 @@ export default {
       }
     },
     reset () {
-     this.$refs.form.reset()
-    },    
+      this.$refs.form.reset()
+    }
   }
 }
 </script>
