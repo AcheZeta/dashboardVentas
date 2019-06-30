@@ -7,13 +7,15 @@
     >
       <v-text-field
         v-model="dashboardName"
+        type="text"
         :rules="textRules"
         label="Nombre del Dashboard"
         required
       ></v-text-field>
 
       <v-text-field
-        v-model="newPurchases"
+        v-model="newPurchase"
+        type="number"
         :rules="numberRules"
         label="Cantidad de Nuevas compras"
         required
@@ -21,6 +23,7 @@
 
       <v-text-field
         v-model="increasePurchase"
+        type="number"
         :rules="numberRules"
         label="Incremento de compras"
         required
@@ -28,6 +31,7 @@
 
       <v-text-field
         v-model="newUsers"
+        type="number"
         :rules="numberRules"
         label="Cantidad de nuevos usuarios"
         required
@@ -35,6 +39,7 @@
 
       <v-text-field
         v-model="newVisit"
+        type="number"
         :rules="numberRules"
         label="Cantidad de nuevas visitas"
         required
@@ -42,6 +47,7 @@
 
       <v-text-field
         v-model="date"
+        type="number"
         :rules="numberRules"
         label="Fecha"
         required
@@ -53,36 +59,45 @@
       >
         ENVIAR
       </v-btn>
-
+    <v-btn
+      color="error"
+      @click="reset"
+    >
+      CANCELAR
+    </v-btn>
     </v-form>
   </v-container>
 </template>
 
 <script>
 export default {
-  data: () => ({
+  data () {
+  return {    
     valid: true,
     dashboardName: '',
-    newPurchase: '',
-    increasePurchase: '',
-    newUsers: '',
-    newVisit: '',
-    date: '',
+    newPurchase: null,
+    increasePurchase: null,
+    newUsers: null,
+    newVisit: null,
+    date: null,
     numberRules: [
-      v => !!NaN || 'Este campo es requerido',
-      v => (v && v.length <= 50) || 'El nombre es demasiado largo'
+      v => !!v || 'Este campo es requerido'
     ],
     textRules: [
       v => !!v || 'Este campo es requerido'
       // v => (v && v.length <= 50) || 'El nombre es demasiado largo'
     ]
-  }),
+  } 
+  },
   methods: {
     validate () {
       if (this.$refs.form.validate()) {
         this.snackbar = true
       }
-    }
+    },
+    reset () {
+     this.$refs.form.reset()
+    },    
   }
 }
 </script>
