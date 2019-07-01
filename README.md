@@ -1,16 +1,19 @@
-# Dashboard de Ventas
+**ENCUENTRA EL README Y PROYECTO ACTUALIZADOE [AQUÍ](https://github.com/AcheZeta/dashboardVentas/tree/ramaHame)**
+
+# Dashboard de Ventas 📊 
 
 El siguiente proyecto es una prueba técnica que busca establecer parámetros en
 conocimientos generales de desarrollo frontend y metodologías
 afines.
-• Se solicitará la creación parcial de un aplicativo web de ventas, el
-cual deberá ser implementado a través de técnicas de desarrollo
-ágiles y escalables.
-• Considerar que el aplicativo será accedido de múltiples dispositivos.
 
-**ENCUENTRA EL README Y PROYECTO ACTUALIZADOE [AQUÍ](https://github.com/AcheZeta/dashboardVentas/tree/ramaHame)**
+- Se solicitará la creación parcial de un aplicativo web de ventas, el cual deberá ser implementado a través de técnicas de desarrollo ágiles y escalables.
+- Considerar que el aplicativo será accedido de múltiples dispositivos.
+- La prueba consistio de dos etapas.
+- Cada etapa con hitos bien definidos a ser completados
+- Los hitos incompletos serán evaluados, pero no considerados en la conclusión final
+- Al término de la evaluación se deberá justificar la utilización de componentes, librerías, etc. externas y las decisiones de desarrollo elegidas
 
-## Planeación  y Desarrollo 🚀
+## Planeación  y Desarrollo 📑
 
 Para la realización de este proyecto se contaron con 3 días hábiles, dentro de los cuales se realizaron actividades de **planeación**, **maquetación**, **desarrollo** y **documentación**.
 
@@ -18,11 +21,34 @@ Para la realización de este proyecto se contaron con 3 días hábiles, dentro d
 
 La parte de planeación fue realizada utilizando [github projects](https://github.com/AcheZeta/dashboardVentas/projects/1?fullscreen=true) donde se automatizó usando issues para definir las tareas, categorizandolas de acuerdo al tipo de tarea. 
 
-### Desarrollo 📋
+### Desarrollo 💻
 
 Durante el desarrollo se utilizo la libreria de css vuetify, firebase para la base de datos, el framework vue y durante las pruebas para para la obtención de la API se uso Axios, sin embargo está no quedo en la versión actual.
 
-### Pre-requisitos 📋
+Las principales limitaciones de esta prueba fueron: 
+- Tiempo.
+- Conocimiento y Dominio parcial del framework.
+- Validación de inputs. 
+
+### Alcances 👩🏼‍💻
+
+Durante este primer sprint de desarrollo los alcances fueron: 
+- 🔥 Lee y Escribe en la base de Datos de Firebase.
+- ✏️ Maquetado de los pantallas: Página de Alta de Datos y Página de Dashboard.
+- ⚙️ Reutilización de componentes: Toolbar y Sidenav. 
+- 🎯 Routeado de la página. Redirigiendo a la página de Dashboard.
+- 📍 Creación de tarjetas de venta dinámicas, basadas en el formulario.
+
+### Áreas de Oportunidad ⛏ 
+
+Durante este primer sprint las áreas de oportunidad que se detectaron y en los  que planeo trabajar en un próximo sprint son: 
+- Mejorar maquetación de todos los elementos.
+- Crear reglas de validación del formulario. 
+- Autentificación de usuarios
+- Mostrar datos del usuario en el panel de navegación
+- Mejorar navegación del sitio cambiando dinámicamente el menú lateral de acuerdo a la página en la que se encuentra situado el usuario.
+
+### Haz una copia 📦
 
 Antes que nada, asegúrate de tener un  editor de texto en condiciones, yo usé Visual Studio.
 Para ejecutar los comandos a continuación necesitarás una  UNIX Shell, que interpreta líneas de comando (command-line interpreter) así como tener git instalado. Si usas un sistema operativo "UNIX-like", como GNU/Linux o MacOS, ya tienes una shell (terminal) instalada por defecto (y probablemente git también). Si usas Windows puedes usar Git bash, aunque recomendaría que consideres probar  GNU/Linux como tu Sistema Operativo.
@@ -76,3 +102,5 @@ Por favor lee el [CONTRIBUTING.md](https://github.com/Laboratoria/curricula-js/b
 ## Autora ✒️
 
 - Hameyalli - [AcheZeta](https://github.com/AcheZeta)
+
+
