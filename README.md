@@ -8,6 +8,14 @@ cual deberá ser implementado a través de técnicas de desarrollo
 ágiles y escalables.
 • Considerar que el aplicativo será accedido de múltiples dispositivos.
 
+• La prueba consistio de dos etapas.
+• Cada etapa con hitos bien definidos a ser completados
+• Los hitos incompletos serán evaluados, pero no considerados en la
+conclusión final
+• Al término de la evaluación se deberá justificar la utilización de
+componentes, librerías, etc. externas y las decisiones de desarrollo
+elegidas
+
 ## Planeación  y Desarrollo 📑
 
 Para la realización de este proyecto se contaron con 3 días hábiles, dentro de los cuales se realizaron actividades de **planeación**, **maquetación**, **desarrollo** y **documentación**.
@@ -24,6 +32,21 @@ Las principales limitaciones de esta prueba fueron:
 - Tiempo.
 - Conocimiento y Dominio parcial del framework.
 - Validación de inputs. 
+
+### Alcances 👩🏼‍💻
+
+Durante este primer sprint de desarrollo los alcances fueron: 
+- 🔥 Lee y Escribe en la base de Datos de Firebase.
+- ✏️ Maquetado de los pantallas: Página de Alta de Datos y Página de Dashboard.
+- ⚙️ Reutilización de componentes: Toolbar y Sidenav. 
+- 🎯 Routeado de la página. Redirigiendo a la página de Dashboard.
+- 📍 Creación de tarjetas de venta dinámicas, basadas en el formulario.
+
+### Áreas de Oportunidad ⛏ 
+
+Durante este primer sprint las áreas de oportunidad que se detectaron y en los  que planeo trabajar en un próximo sprint son: 
+- Mejorar maquetación de todos los elementos.
+- Crear reglas de validación del formulario. 
 
 ### Haz una copia 📦
 
