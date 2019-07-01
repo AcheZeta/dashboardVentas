@@ -3,18 +3,15 @@
 El siguiente proyecto es una prueba técnica que busca establecer parámetros en
 conocimientos generales de desarrollo frontend y metodologías
 afines.
-• Se solicitará la creación parcial de un aplicativo web de ventas, el
+- Se solicitará la creación parcial de un aplicativo web de ventas, el
 cual deberá ser implementado a través de técnicas de desarrollo
 ágiles y escalables.
-• Considerar que el aplicativo será accedido de múltiples dispositivos.
+- Considerar que el aplicativo será accedido de múltiples dispositivos.
 
-• La prueba consistio de dos etapas.
-• Cada etapa con hitos bien definidos a ser completados
-• Los hitos incompletos serán evaluados, pero no considerados en la
-conclusión final
-• Al término de la evaluación se deberá justificar la utilización de
-componentes, librerías, etc. externas y las decisiones de desarrollo
-elegidas
+- La prueba consistio de dos etapas.
+- Cada etapa con hitos bien definidos a ser completados
+- Los hitos incompletos serán evaluados, pero no considerados en la conclusión final
+- Al término de la evaluación se deberá justificar la utilización de componentes, librerías, etc. externas y las decisiones de desarrollo elegidas
 
 ## Planeación  y Desarrollo 📑
 
