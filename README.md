@@ -90,8 +90,8 @@ firebase deploy
 * [Firebase](https://firebase.google.com/)
 * [Cloud Firestore](https://firebase.google.com/docs/firestore)
 * [Firebase Hosting](https://firebase.google.com/docs/hosting)
-- [Git](https://git-scm.com/)
-- [GitHub](https://github.com/)
+* [Git](https://git-scm.com/)
+* [GitHub](https://github.com/)
 
 ## Contribuyendo 🖇️
 
