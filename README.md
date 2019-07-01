@@ -6,7 +6,6 @@ afines.
 
 - Se solicitará la creación parcial de un aplicativo web de ventas, el cual deberá ser implementado a través de técnicas de desarrollo ágiles y escalables.
 - Considerar que el aplicativo será accedido de múltiples dispositivos.
-
 - La prueba consistio de dos etapas.
 - Cada etapa con hitos bien definidos a ser completados
 - Los hitos incompletos serán evaluados, pero no considerados en la conclusión final
@@ -43,6 +42,9 @@ Durante este primer sprint de desarrollo los alcances fueron:
 Durante este primer sprint las áreas de oportunidad que se detectaron y en los  que planeo trabajar en un próximo sprint son: 
 - Mejorar maquetación de todos los elementos.
 - Crear reglas de validación del formulario. 
+- Autentificación de usuarios
+- Mostrar datos del usuario en el panel de navegación
+- Mejorar navegación del sitio cambiando dinámicamente el menú lateral de acuerdo a la página en la que se encuentra situado el usuario.
 
 ### Haz una copia 📦
 
