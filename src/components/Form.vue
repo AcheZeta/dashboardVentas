@@ -2,11 +2,10 @@
 <v-container>
     <v-form
       ref="form"
-      v-model="valid"
       lazy-validation
     >
       <v-text-field
-        v-model="dashboardName"
+        v-model="formSales.dashboardName"
         type="text"
         :rules="textRules"
         label="Nombre del Dashboard"
@@ -14,7 +13,7 @@
       ></v-text-field>
 
       <v-text-field
-        v-model="newPurchase"
+        v-model="formSales.newPurchase"
         type="number"
         :rules="numberRules"
         label="Cantidad de Nuevas compras"
@@ -22,7 +21,7 @@
       ></v-text-field>
 
       <v-text-field
-        v-model="increasePurchase"
+        v-model="formSales.increasePurchase"
         type="number"
         :rules="numberRules"
         label="Incremento de compras"
@@ -30,7 +29,7 @@
       ></v-text-field>
 
       <v-text-field
-        v-model="newUsers"
+        v-model="formSales.newUsers"
         type="number"
         :rules="numberRules"
         label="Cantidad de nuevos usuarios"
@@ -38,7 +37,7 @@
       ></v-text-field>
 
       <v-text-field
-        v-model="newVisit"
+        v-model="formSales.newVisit"
         type="number"
         :rules="numberRules"
         label="Cantidad de nuevas visitas"
@@ -46,16 +45,15 @@
       ></v-text-field>
 
       <v-text-field
-        v-model="date"
-        type="number"
-        :rules="numberRules"
+        v-model="formSales.date"
+        type="date"
         label="Fecha"
         required
       ></v-text-field>
 
       <v-btn
         color="success"
-        @click="validate"
+        @click="addData"
       >
         ENVIAR
       </v-btn>
@@ -70,34 +68,38 @@
 </template>
 
 <script>
+import { db } from '../main'
+import firebase, { functions } from 'firebase'
+
 export default {
   data () {
     return {
-      valid: true,
+      formSales: {
       dashboardName: '',
-      newPurchase: null,
-      increasePurchase: null,
-      newUsers: null,
-      newVisit: null,
-      date: null,
-      numberRules: [
-        v => !!v || 'Este campo es requerido'
-      ],
-      textRules: [
-        v => !!v || 'Este campo es requerido'
-        // v => (v && v.length <= 50) || 'El nombre es demasiado largo'
-      ]
+      newPurchase: 0,
+      increasePurchase: 0,
+      newUsers: 0,
+      newVisit: 0,
+      date: ''
+      },
     }
   },
   methods: {
-    validate () {
-      if (this.$refs.form.validate()) {
-        this.snackbar = true
-      }
-    },
     reset () {
       this.$refs.form.reset()
-    }
+    },
+    addData () {
+      db.collection('ventas').add(this.formSales)
+        .then((docRef) => {
+          console.log('Document written with ID: ', docRef.id)
+          // this.readData()
+        })
+        .catch(function (error) {
+          console.error ('Error adding document: ', error)
+        })
+      this.reset ()
+      // this.watcher ()
+    },
   }
 }
 </script>

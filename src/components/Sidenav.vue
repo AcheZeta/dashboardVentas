@@ -4,29 +4,17 @@
       <v-list>
         <v-list-tile>
           <v-list-tile-title class="title white--text">
-            Application
+            Dashboard
           </v-list-tile-title>
         </v-list-tile>
+        <v-list-tile>
+        <v-btn flat class="white--text" @click="dashRoute">Dashboard</v-btn>
+        </v-list-tile>        
       </v-list>
     </v-toolbar>
 
     <v-divider></v-divider>
 
-    <v-list dense class="pt-0">
-      <v-list-tile
-        v-for="item in items"
-        :key="item.title"
-        @click="prueba"
-      >
-        <v-list-tile-action>
-          <v-icon color="white">{{ item.icon }}</v-icon>
-        </v-list-tile-action>
-
-        <v-list-tile-content>
-          <v-list-tile-title class="title white--text">{{ item.title }}</v-list-tile-title>
-        </v-list-tile-content>
-      </v-list-tile>
-    </v-list>
   </v-navigation-drawer>
 </template>
 
@@ -35,20 +23,12 @@ export default {
   name: 'Sidenav',
   data () {
     return {
-      items: [
-        { title: 'Usuario', icon: 'person' },
-        { title: 'Formulario', icon: 'list' },
-        { title: 'Dashboard', icon: 'dashboard' }
-      ],
       right: null
     }
   },
   methods: {
-    prueba () {
-      console.log('Hola')
-    },
     dashRoute () {
-      this.$router.push('/dashboard')
+      this.$router.push('dashboard')
     }
   }
 }
