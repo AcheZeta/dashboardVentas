@@ -1,4 +1,4 @@
-# Dashboard de Ventas
+# Dashboard de Ventas 📊 
 
 El siguiente proyecto es una prueba técnica que busca establecer parámetros en
 conocimientos generales de desarrollo frontend y metodologías
@@ -8,7 +8,7 @@ cual deberá ser implementado a través de técnicas de desarrollo
 ágiles y escalables.
 • Considerar que el aplicativo será accedido de múltiples dispositivos.
 
-## Planeación  y Desarrollo 🚀
+## Planeación  y Desarrollo 📑
 
 Para la realización de este proyecto se contaron con 3 días hábiles, dentro de los cuales se realizaron actividades de **planeación**, **maquetación**, **desarrollo** y **documentación**.
 
@@ -16,11 +16,11 @@ Para la realización de este proyecto se contaron con 3 días hábiles, dentro d
 
 La parte de planeación fue realizada utilizando [github projects](https://github.com/AcheZeta/dashboardVentas/projects/1?fullscreen=true) donde se automatizó usando issues para definir las tareas, categorizandolas de acuerdo al tipo de tarea. 
 
-### Desarrollo 📋
+### Desarrollo 💻
 
 Durante el desarrollo se utilizo la libreria de css vuetify, firebase para la base de datos, el framework vue y durante las pruebas para para la obtención de la API se uso Axios, sin embargo está no quedo en la versión actual.
 
-### Pre-requisitos 📋
+### Haz una copia 📦
 
 Antes que nada, asegúrate de tener un  editor de texto en condiciones, yo usé Visual Studio.
 Para ejecutar los comandos a continuación necesitarás una  UNIX Shell, que interpreta líneas de comando (command-line interpreter) así como tener git instalado. Si usas un sistema operativo "UNIX-like", como GNU/Linux o MacOS, ya tienes una shell (terminal) instalada por defecto (y probablemente git también). Si usas Windows puedes usar Git bash, aunque recomendaría que consideres probar  GNU/Linux como tu Sistema Operativo.
