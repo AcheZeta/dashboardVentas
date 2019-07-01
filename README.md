@@ -8,6 +8,8 @@ cual deberá ser implementado a través de técnicas de desarrollo
 ágiles y escalables.
 • Considerar que el aplicativo será accedido de múltiples dispositivos.
 
+**ENCUENTRA EL README Y PROYECTO ACTUALIZADOE [AQUÍ](https://github.com/AcheZeta/dashboardVentas/tree/ramaHame)**
+
 ## Planeación  y Desarrollo 🚀
 
 Para la realización de este proyecto se contaron con 3 días hábiles, dentro de los cuales se realizaron actividades de **planeación**, **maquetación**, **desarrollo** y **documentación**.
