@@ -1,4 +1,4 @@
-**ENCUENTRA EL README Y PROYECTO ACTUALIZADOE [AQUÍ](https://github.com/AcheZeta/dashboardVentas/tree/ramaHame)**
+**ENCUENTRA EL README Y PROYECTO ACTUALIZADO [AQUÍ](https://github.com/AcheZeta/dashboardVentas/tree/ramaHame)**
 
 # Dashboard de Ventas 📊 
 
