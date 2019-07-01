@@ -20,6 +20,11 @@ La parte de planeación fue realizada utilizando [github projects](https://githu
 
 Durante el desarrollo se utilizo la libreria de css vuetify, firebase para la base de datos, el framework vue y durante las pruebas para para la obtención de la API se uso Axios, sin embargo está no quedo en la versión actual.
 
+Las principales limitaciones de esta prueba fueron: 
+- Tiempo.
+- Conocimiento y Dominio parcial del framework.
+- Validación de inputs. 
+
 ### Haz una copia 📦
 
 Antes que nada, asegúrate de tener un  editor de texto en condiciones, yo usé Visual Studio.
