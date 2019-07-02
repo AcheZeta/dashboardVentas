@@ -1,7 +1,7 @@
 <template>
   <v-container grid-list-md text-xs-center>
     <v-layout row wrap>
-      <v-flex v-for="sales in cardSales" :key="sales.dashboardName" id="sales" xs3>
+      <v-flex v-for="sales in cardSales" :key="sales.dashboardName" id="sales" xs3 md2>
         <b>
           <h1 class="headline mb-0">{{ sales.data().dashboardName }}</h1></b>
         <br>
@@ -9,7 +9,7 @@
           <v-card-title primary-title>
             <div>
               <h3 class="headline mb-0"><b>{{ sales.data().newPurchase }}</b></h3>
-              <h4 class="headline mb-0">Nuevas Compras</h4>
+              <h5 class="headline mb-0">Nuevas Compras</h5>
             </div>
           </v-card-title>
           <!-- <v-card-actions>

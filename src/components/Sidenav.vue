@@ -9,7 +9,10 @@
         </v-list-tile>
         <v-list-tile>
         <v-btn flat class="white--text" @click="dashRoute">Dashboard</v-btn>
-        </v-list-tile>        
+        </v-list-tile>
+        <v-list-tile>
+        <v-btn flat class="white--text" @click="homeRoute">Formulario</v-btn>
+        </v-list-tile>
       </v-list>
     </v-toolbar>
 
@@ -29,7 +32,10 @@ export default {
   methods: {
     dashRoute () {
       this.$router.push('dashboard')
-    }
+    },
+    homeRoute () {
+      this.$router.push('/')
+    },
   }
 }
 </script>
