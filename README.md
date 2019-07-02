@@ -69,10 +69,9 @@ npm run build
 npm run build --report
 ```
 
-
 ## Ejecutando las pruebas ⚙️
 
-Los tests desarrollados para este proyecto aún están en construcción.
+Los tests para este proyecto aún están en construcción.
 Serán subidos al proyecto en cuento esten listos. 
 
 ## Deployment 📦
@@ -99,5 +98,5 @@ Por favor lee el [CONTRIBUTING.md](https://github.com/Laboratoria/curricula-js/b
 
 ## Autora ✒️
 
-- Hameyalli - [AcheZeta](https://github.com/AcheZeta)
+- Hameyalli Elizalde Acevedo- [AcheZeta](https://github.com/AcheZeta)
 
