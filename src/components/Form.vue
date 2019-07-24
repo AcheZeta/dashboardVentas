@@ -7,7 +7,7 @@
       <v-text-field
         v-model="formSales.dashboardName"
         type="text"
-        :rules="textRules"
+        :rules="nameRules"
         label="Nombre del Dashboard"
         required
       ></v-text-field>
@@ -15,7 +15,7 @@
       <v-text-field
         v-model="formSales.newPurchase"
         type="number"
-        :rules="numberRules"
+        :rules="nameRules"
         label="Cantidad de Nuevas compras"
         required
       ></v-text-field>
@@ -23,7 +23,7 @@
       <v-text-field
         v-model="formSales.increasePurchase"
         type="number"
-        :rules="numberRules"
+        :rules="nameRules"
         label="Incremento de compras"
         required
       ></v-text-field>
@@ -31,7 +31,7 @@
       <v-text-field
         v-model="formSales.newUsers"
         type="number"
-        :rules="numberRules"
+        :rules="nameRules"
         label="Cantidad de nuevos usuarios"
         required
       ></v-text-field>
@@ -39,7 +39,7 @@
       <v-text-field
         v-model="formSales.newVisit"
         type="number"
-        :rules="numberRules"
+        :rules="nameRules"
         label="Cantidad de nuevas visitas"
         required
       ></v-text-field>
@@ -47,6 +47,7 @@
       <v-text-field
         v-model="formSales.date"
         type="date"
+        :rules="nameRules"
         label="Fecha"
         required
       ></v-text-field>
@@ -82,6 +83,10 @@ export default {
       newVisit: 0,
       date: ''
       },
+      nameRules: [
+        v => !!v || 'Este campo es requerido',
+        v => (v && v.length <= 25) || 'El nombre es demasiado largo'
+      ],
     }
   },
   methods: {

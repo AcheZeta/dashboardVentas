@@ -12,9 +12,6 @@
               <h5 class="headline mb-0">Nuevas Compras</h5>
             </div>
           </v-card-title>
-          <!-- <v-card-actions>
-            <v-btn flat color="blue">Ver más</v-btn>
-          </v-card-actions> -->
         </v-card>
         <br>
         <v-card class="green lighten-3">
@@ -57,10 +54,9 @@
   </v-container>
 </template>
 
-
 <script>
 import { db } from '../main'
-import firebase from 'firebase'
+import axios from 'axios'
 
 export default {
   data () {
@@ -78,10 +74,16 @@ export default {
             console.log(doc)
           })
         })
+    },
+    async getData(){
+      let data = await axios.get('https://raw.githubusercontent.com/AcheZeta/CDMX007-fe-burger-queen/master/menu.json')
+      console.log(data);
+      
     }
   },
   created () {
-    this.readData ()
+    this.readData (),
+    this.getData ()
   }
 }
 </script>
