@@ -21,9 +21,6 @@
               <h4 class="headline mb-0">Incremento de Compras</h4>
             </div>
           </v-card-title>
-          <!-- <v-card-actions>
-            <v-btn flat color="blue">Ver más</v-btn>
-          </v-card-actions> -->
         </v-card>
         <br>
         <v-card class="orange lighten-2">
@@ -33,9 +30,6 @@
               <h4 class="headline mb-0">Nuevos Usuarios</h4>
             </div>
           </v-card-title>
-          <!-- <v-card-actions>
-            <v-btn flat color="blue">Ver más</v-btn>
-          </v-card-actions> -->
         </v-card>
         <br>
         <v-card class="red lighten-2">
@@ -45,9 +39,6 @@
               <h4 class="headline mb-0">Nuevas Visitas</h4>
             </div>
           </v-card-title>
-          <!-- <v-card-actions>
-            <v-btn flat color="blue">Ver más</v-btn>
-          </v-card-actions> -->
         </v-card>
       </v-flex>
     </v-layout>
@@ -61,7 +52,8 @@ import axios from 'axios'
 export default {
   data () {
     return {
-      cardSales: []
+      cardSales: [],
+      info: null
     }
   },
   methods: {
@@ -75,15 +67,16 @@ export default {
           })
         })
     },
-    async getData(){
-      let data = await axios.get('https://raw.githubusercontent.com/AcheZeta/CDMX007-fe-burger-queen/master/menu.json')
-      console.log(data);
-      
-    }
   },
   created () {
-    this.readData (),
+    this.readData ()
     this.getData ()
+  },
+  mounted () {
+    axios
+      .get('http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=460d45c0ef194983ff991c36e5e496b0')
+      .then (response => (this.info = response.data))
+      console.log(this.info)
   }
 }
 </script>

@@ -8,11 +8,15 @@
           </v-list-tile-title>
         </v-list-tile>
         <v-list-tile>
+        <Clima></Clima>
+        </v-list-tile>
+        <v-list-tile>
         <v-btn flat class="white--text" @click="dashRoute">Dashboard</v-btn>
         </v-list-tile>
         <v-list-tile>
         <v-btn flat class="white--text" @click="homeRoute">Formulario</v-btn>
         </v-list-tile>
+        
       </v-list>
     </v-toolbar>
 
@@ -22,8 +26,13 @@
 </template>
 
 <script>
+import Clima from '@/components/Clima'
+
 export default {
   name: 'Sidenav',
+  components: {
+    Clima
+  },
   data () {
     return {
       right: null
